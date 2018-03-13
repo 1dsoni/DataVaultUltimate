@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:text="Order"
+        android:textSize="20dp"
+        android:textColor="@color/colorText"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RadioGroup
+        android:id="@+id/rg_order_by_alert_arrange_by_id"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:paddingBottom="32dp"
+        android:paddingTop="16dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_weight="1"
+            android:id="@+id/rb_ascending_alert_arrange_by_id"
+            android:checked="true"
+            android:text="Ascending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:layout_weight="1"
+            android:id="@+id/rb_descending_alert_arrange_by_id"
+            android:text="Descending"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RadioGroup>
+
+    <View
+        android:background="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="4dp">
+
+    </View>
+
+    <RadioGroup
+        android:id="@+id/rg_alert_arrange_by_id"
+        android:orientation="vertical"
+        android:paddingLeft="32dp"
+        android:paddingRight="32dp"
+        android:paddingBottom="32dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:text="Category"
+            android:textSize="20dp"
+            android:textColor="@color/colorText"
+            android:layout_gravity="bottom"
+            android:layout_margin="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:layout_marginTop="16dp"
+            android:id="@+id/name_created_rb__alert_arrange_id"
+            android:text="Alphabetical Order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:layout_marginTop="16dp"
+            android:id="@+id/color_used_rb__alert_arrange_id"
+            android:text="Color-wise Order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:layout_marginTop="16dp"
+            android:id="@+id/date_created_rb__alert_arrange_id"
+            android:text="Date created"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+</LinearLayout>

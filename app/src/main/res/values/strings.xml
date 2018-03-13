@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Notes Manager</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="splash_label">Welcome</string>
+    <string name="loading_splash">Loading please wait..</string>
+    <string name="splash_label_made_">Made with \u2764\nin India</string>
+
+    <string name="subject_grid_item_name">Subject Name</string>
+    <string name="subject_grid_item_count">Count</string>
+    <string name="subject_grid_item_date">Date</string>
+
+    <string name="delete_subject">Are you sure ?\nYou will lose ALL data</string>
+
+    <string name="color_red">#94bf0f0f</string>
+</resources>

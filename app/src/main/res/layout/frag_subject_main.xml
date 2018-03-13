@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.projects.doctor.datavaultultimate.activities.Subject_Note">
+
+    <GridView
+        android:id="@+id/subjects_grid_id"
+        android:numColumns="2"
+        android:clipChildren="true"
+        android:columnWidth="150dp"
+        android:stretchMode="spacingWidthUniform"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </GridView>
+
+</LinearLayout>

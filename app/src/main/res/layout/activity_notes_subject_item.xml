@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context="com.projects.doctor.datavaultultimate.activities.notes_subject_item"
+
+        android:background="@drawable/notes_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.FloatingActionButton
+            app:elevation="25dp"
+            app:pressedTranslationZ="40dp"
+            android:id="@+id/fab_popup_add_note_subject_item_id"
+            android:src="@drawable/ic_add_box_black_24dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="8dp"
+            app:fabSize="normal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/layout_textinput_notessubitem_id"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="55dp">
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/sub_item_note_edit_get_text_layout_id"
+                android:hint="Enter note here"
+                android:layout_weight="5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <EditText
+                    android:textSize="15sp"
+                    android:textColor="#000"
+                    android:id="@+id/sub_item_note_edit_get_text_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </android.support.design.widget.TextInputLayout>
+
+            <RelativeLayout
+                android:layout_marginLeft="16dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/default_image"
+                    android:src="@drawable/ic_subject_black_24dp"
+                    android:visibility="gone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:background="#000"
+                    android:onClick="clickOnAddNote"
+                    android:id="@+id/sub_item_note_btn_save_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:padding="8dp"
+                    android:id="@+id/sub_item_note_btn_add_back_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_add_box_black_24dp"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_below="@id/layout_textinput_notessubitem_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/justforhelper_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <Button
+                android:visibility="gone"
+                android:padding="8dp"
+                android:drawableLeft="@drawable/ic_date_range_black_24dp"
+                android:background="#000000"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="16dp"
+                android:id="@+id/sub_item_note_btn_date_chooser_id"
+                android:onClick="date_chooser"
+                android:layout_alignParentLeft="true"
+                android:text="date"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp" />
+            <Button
+                android:visibility="gone"
+                android:drawableLeft="@drawable/ic_access_time_black_24dp"
+                android:padding="8dp"
+                android:background="#000000"
+                android:textColor="#ffffff"
+                android:layout_marginRight="16dp"
+                android:id="@+id/sub_item_note_btn_time_chooser_id"
+                android:onClick="time_chooser"
+                android:layout_alignParentRight="true"
+                android:text="time"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp" />
+            <ListView
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp"
+                android:id="@+id/sub_item_note_listview_id"
+                android:layout_below="@+id/sub_item_note_btn_date_chooser_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </ListView>
+        </RelativeLayout>
+
+    </RelativeLayout>

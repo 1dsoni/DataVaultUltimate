@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:padding="62dp"
+    android:background="@color/colorPrimaryTranslucent"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/reminder_date_alert_alarm_id"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:text="date here"
+        android:textSize="32dp"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:text="#"
+            android:textSize="42dp"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp" />
+        <TextView
+            android:layout_marginTop="16dp"
+            android:textColor="#ffffff"
+            android:fontFamily="casual"
+            android:id="@+id/content_textview_alarm_ringing_id"
+            android:textSize="32sp"
+            android:text="   "
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_stop_alert_alarm_id"
+        android:background="#00ffffff"
+        android:textColor="#ffffff"
+        android:padding="8dp"
+        android:fontFamily="casual"
+        android:text="i got it"
+        android:textStyle="bold"
+        android:textSize="42sp"
+        android:layout_marginTop="32dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

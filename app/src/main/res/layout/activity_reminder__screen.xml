@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:gravity="center"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.projects.doctor.datavaultultimate.InAppReminder.Reminder_Screen">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <android.support.v7.widget.CardView
+                app:cardBackgroundColor="@color/colorPrimaryDark"
+                app:cardElevation="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:padding="8dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <LinearLayout
+                        android:layout_alignParentLeft="true"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <android.support.v7.widget.CardView
+                            app:contentPadding="8dp"
+                            app:cardBackgroundColor="#114e21"
+                            app:cardElevation="30dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textColor="#ffffff"
+                                android:textSize="20sp"
+                                android:padding="4dp"
+                                android:gravity="center"
+                                android:id="@+id/btn_date_reminder_screen_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_alignParentRight="true"
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <android.support.v7.widget.CardView
+                            app:contentPadding="8dp"
+                            app:cardBackgroundColor="#114e21"
+                            app:cardElevation="30dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <TextView
+                                android:textColor="#ffffff"
+                                android:textSize="20sp"
+                                android:padding="4dp"
+                                android:gravity="center"
+                                android:id="@+id/btn_time_reminder_screen_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent" />
+
+                        </android.support.v7.widget.CardView>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_margin="24dp"
+                android:id="@+id/title_edit_layout_reminder_screen_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:padding="8dp"
+                    android:maxLines="6"
+                    android:id="@+id/title_edit_reminder_screen_id"
+                    android:hint="Enter The title of Reminder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:padding="4dp"
+                android:layout_gravity="end"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorPrimaryDark"
+                android:textColor="#fff"
+                android:id="@+id/btn_clear_alarm_reminder_sreen_id"
+                android:text="clear Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <TextView
+                android:visibility="gone"
+                android:gravity="center_horizontal"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:text="Set Alarm : "
+                android:textSize="24sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RadioGroup
+                android:visibility="gone"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:id="@+id/radio_group_reminder_screen_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:checked="true"
+                    android:id="@+id/exact_time_radio_btn_reminder_screen_id"
+                    android:text="on exact time"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/five_time_radio_btn_reminder_screen_id"
+                    android:text="5 Minutes Before"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/thirty_time_radio_btn_reminder_screen_id"
+                    android:text="30 MInutes Before "
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+
+            <RelativeLayout
+                android:layout_margin="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:background="@color/colorPrimaryDark"
+                    android:textColor="#fff"
+                    android:id="@+id/btn_set_alarm_reminder_sreen_id"
+                    android:text="Set "
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:background="@color/colorPrimaryDark"
+                    android:textColor="#fff"
+                    android:id="@+id/btn_back_alarm_reminder_sreen_id"
+                    android:text="cancel "
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
